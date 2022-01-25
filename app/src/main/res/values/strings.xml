@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GKquiz</string>
+     <string name="button"><strong>START</strong></string>
+    <string name="select_quiz">SELECT QUIZ</string>
+    <string name="welcome">WELCOME</string>
+    <string name="no">FALSE</string>
+    <string name="yes">TRUE</string>
+    <string name="todo" />
+    <string name="textview">TextView</string>
+</resources>
