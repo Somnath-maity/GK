@@ -41,7 +41,7 @@ public class hist extends AppCompatActivity {
                         hquestion.setText(hquestions[hindex]);
                     }
                     else{
-                        Toast.makeText(hist.this, "Your score is" + hscore, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(hist.this, "Your score is " + hscore + "/" +hquestions.length, Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{
@@ -62,7 +62,7 @@ public class hist extends AppCompatActivity {
                         hquestion.setText(hquestions[hindex]);
                     }
                     else{
-                        Toast.makeText(hist.this, "Your score is " + hscore, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(hist.this, "Your score is " + hscore + "/" +hquestions.length, Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{

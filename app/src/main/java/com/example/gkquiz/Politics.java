@@ -43,7 +43,7 @@ public class Politics extends AppCompatActivity {
                         pquestion.setText(pquestions[pindex]);
                     }
                     else{
-                        Toast.makeText(Politics.this, "Your score is" + pscore, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Politics.this, "Your score is " + pscore + "/" +pquestions.length, Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{
@@ -64,7 +64,7 @@ public class Politics extends AppCompatActivity {
                         pquestion.setText(pquestions[pindex]);
                     }
                     else{
-                        Toast.makeText(Politics.this, "Your score is" + pscore, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Politics.this, "Your score is " + pscore + "/" +pquestions.length, Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{
