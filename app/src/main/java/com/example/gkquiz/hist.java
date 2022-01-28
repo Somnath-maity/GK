@@ -33,7 +33,7 @@ public class hist extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (hindex<=hquestions.length-1){
-                    if (!hanswers[hindex]){
+                    if (hanswers[hindex]){
                         hscore++;
                     }
                     hindex++;
@@ -43,6 +43,9 @@ public class hist extends AppCompatActivity {
                     else{
                         Toast.makeText(hist.this, "Your score is" + hscore, Toast.LENGTH_SHORT).show();
                     }
+                }
+                else{
+                    Toast.makeText(hist.this, "Restart The Application Again to Start the quiz ", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -61,6 +64,9 @@ public class hist extends AppCompatActivity {
                     else{
                         Toast.makeText(hist.this, "Your score is " + hscore, Toast.LENGTH_SHORT).show();
                     }
+                }
+                else{
+                    Toast.makeText(hist.this, "Restart The Application Again to Start the quiz ", Toast.LENGTH_SHORT).show();
                 }
             }
         });

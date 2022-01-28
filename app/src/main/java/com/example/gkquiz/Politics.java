@@ -35,7 +35,7 @@ public class Politics extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (pindex<=pquestions.length-1){
-                    if (!panswers[pindex]){
+                    if (panswers[pindex]){
                         pscore++;
                     }
                     pindex++;
@@ -45,6 +45,9 @@ public class Politics extends AppCompatActivity {
                     else{
                         Toast.makeText(Politics.this, "Your score is" + pscore, Toast.LENGTH_SHORT).show();
                     }
+                }
+                else{
+                    Toast.makeText(Politics.this, "Restart The Application Again to Start the quiz ", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -63,6 +66,9 @@ public class Politics extends AppCompatActivity {
                     else{
                         Toast.makeText(Politics.this, "Your score is" + pscore, Toast.LENGTH_SHORT).show();
                     }
+                }
+                else{
+                    Toast.makeText(Politics.this, "Restart The Application Again to Start the quiz ", Toast.LENGTH_SHORT).show();
                 }
             }
         });

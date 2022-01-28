@@ -36,7 +36,7 @@ private int index=0;
             @Override
             public void onClick(View view) {
                 if (index<=gquestions.length-1){
-                    if (!answers[index]){
+                    if (answers[index]){
                         score++;
                     }
                     index++;
@@ -46,6 +46,9 @@ private int index=0;
                     else{
                         Toast.makeText(geo.this, "Your score is" + score, Toast.LENGTH_SHORT).show();
                     }
+                }
+                else{
+                    Toast.makeText(geo.this, "Restart The Application Again to Start the quiz ", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -64,6 +67,9 @@ private int index=0;
                     else{
                         Toast.makeText(geo.this, "Your score is" + score, Toast.LENGTH_SHORT).show();
                     }
+                }
+                else{
+                    Toast.makeText(geo.this, "Restart The Application Again to Start the quiz ", Toast.LENGTH_SHORT).show();
                 }
             }
         });
